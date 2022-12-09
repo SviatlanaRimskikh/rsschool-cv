@@ -19,3 +19,13 @@ I love coffee, cats and learning new things. Hope I can finish RS School
 ## **Experience**
 
 I don't have experience in the IT.
+
+## **Education**
+
+- **University:** Belarusian Institute of Law, Lawyer
+- **College:** Minsk Financial and Economic College, Accountant
+- **Courses:** JavaScript/Front-end. Stage 0
+
+## **English**
+
+A2 ( I study with tutors twice a week)
