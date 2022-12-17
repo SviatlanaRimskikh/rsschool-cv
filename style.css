@@ -13,12 +13,25 @@ Body {
   background-color: antiquewhite;
   font-family: "Roboto", sans-serif;
   border: 1px solid blue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1440px;
+  width: 100%;
 }
 
 .container-header {
   display: flex;
   max-width: 1440px;
-  margin: 0 auto;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -27,15 +40,104 @@ Body {
 
 .nav-list {
   display: flex;
-  margin-right: 20px;
-  align-items: center;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   list-style: none;
 }
 
+.list-item {
+  padding: 0;
+  margin: 0;
+}
+
 .nav-link {
+  font-size: 18px;
   padding: 0 20px;
   line-height: 50px;
   display: flex;
   color: grey;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: rgb(36, 35, 35);
+}
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 240px;
+  margin: o auto;
+  border: 1px solid yellow;
+}
+
+.side-left {
+  width: 500px;
+}
+
+.photo {
+  width: 450px;
+  height: 500px;
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-left {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  width: 450px;
+}
+
+.section-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-style: bold;
+  font-size: 25px;
+  justify-content: flex-end;
+}
+
+.contacts-list {
+  flex-direction: column;
+  list-style: none;
+}
+
+.contacts-item {
+  padding: 0;
+  margin: 0;
+}
+
+.section-link {
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: grey;
+  transition: 0.4s;
+}
+
+.section-link:hover {
+  color: rgb(36, 35, 35);
+}
+
+.section skills {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.contanier-right {
+  border: 1px solid rgb(76, 33, 116);
 }
