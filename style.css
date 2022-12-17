@@ -12,7 +12,6 @@ Body {
   justify-content: space-between;
   background-color: antiquewhite;
   font-family: "Roboto", sans-serif;
-  border: 1px solid blue;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -35,7 +34,6 @@ Body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .nav-list {
@@ -71,7 +69,6 @@ Body {
   width: 100%;
   min-height: 240px;
   margin: o auto;
-  border: 1px solid yellow;
 }
 
 .side-left {
@@ -87,7 +84,6 @@ Body {
 }
 
 .container-left {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -102,11 +98,13 @@ Body {
 
 .subtitle {
   font-style: bold;
-  font-size: 25px;
+  font-size: 18px;
   justify-content: flex-end;
+  text-align: center;
 }
 
 .contacts-list {
+  display: flex;
   flex-direction: column;
   list-style: none;
 }
@@ -114,6 +112,7 @@ Body {
 .contacts-item {
   padding: 0;
   margin: 0;
+  font-weight: 800;
 }
 
 .section-link {
@@ -129,7 +128,15 @@ Body {
 }
 
 .section skills {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: 800;
 }
 
 @media (max-width: 768px) {
@@ -139,5 +146,55 @@ Body {
 }
 
 .contanier-right {
-  border: 1px solid rgb(76, 33, 116);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  width: 700px;
+}
+
+.title {
+  font-style: bold;
+  font-size: 33px;
+  justify-content: flex-end;
+  text-align: center;
+  letter-spacing: 9px;
+}
+
+.profile-item {
+  font-size: 30 px;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 7px;
+}
+
+.about-item {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.experience-item {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.education-item {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.languages-item {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
