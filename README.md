@@ -1,1 +1,1 @@
-# rsschool-cv
+https://SviatlanaRimskikh.github.io/rsschool-cv/
