@@ -6,35 +6,46 @@ html {
   box-sizing: border-box;
 }
 
-Body {
+body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.5;
+  min-height: 100px;
+  min-width: 600px;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
 
 .header {
-  max-width: 1440px;
   width: 100%;
+  max-width: 1400px;
+  min-height: 60px;
 }
 
 .container-header {
   display: flex;
-  max-width: 1440px;
+  flex-direction: column;
+  max-width: 1360px;
+  min-height: 50px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: 20px;
+  background-color: antiquewhite;
+  margin-left: 20px;
+}
+
+.nav {
+  margin-left: auto;
 }
 
 .nav-list {
@@ -65,20 +76,18 @@ Body {
 }
 .container-main {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1440px;
   width: 100%;
   min-height: 240px;
   margin: o auto;
 }
 
 .side-left {
-  width: 500px;
+  width: 48%;
 }
 
 .photo {
-  width: 450px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
   margin-left: 20px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -87,9 +96,11 @@ Body {
 .container-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-left: 20px;
-  width: 450px;
+  padding: 0;
+  width: 50%;
+  background-color: antiquewhite;
 }
 
 .section-contacts {
@@ -126,6 +137,7 @@ Body {
   text-decoration: none;
   color: grey;
   transition: 0.4s;
+  width: 50%;
 }
 
 .section-link:hover {
@@ -144,18 +156,12 @@ Body {
   font-weight: 800;
 }
 
-@media (max-width: 768px) {
-  .section {
-    width: 100%;
-  }
-}
-
 .contanier-right {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 20px;
-  width: 700px;
+  width: 50%;
 }
 
 .title {
@@ -202,4 +208,27 @@ Body {
   font-size: 18px;
   padding: 0;
   margin: 0;
+}
+
+.footer {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.container-footer {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.git-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.year {
+  font-size: 12px;
 }
